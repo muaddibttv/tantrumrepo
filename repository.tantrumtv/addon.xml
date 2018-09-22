@@ -21,7 +21,7 @@
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Tantrum.TV Official Repository</summary>
+        <summary>Tantrum.TV Official Repository!</summary>
         <description>Tantrum.TV Official Repository</description>
         <platform>all</platform>
         <genre>movies,usa</genre>
