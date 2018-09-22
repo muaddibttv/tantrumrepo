@@ -1,0 +1,5 @@
+<settings>
+    <setting id="addon_debug" value="false" />
+    <setting id="checkupdates" value="true" />
+    <setting id="zip" value="special://home/backupdir" />
+</settings>

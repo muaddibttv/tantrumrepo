@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="[COLOR snow][B]General Options[/B][/COLOR]">
+	    <setting type="lsep" label="[COLOR springgreen][B]Notification Options[/B][/COLOR]"/>    
+        <setting id="enablenotify" type="text" label="[COLOR snow][B]Enable Notifications? Yes or No[/B][/COLOR]" default="Yes" visible="true"/>                
+        <setting id="lastbuildcheck" type="text" label="Next check for build update: " enable="true" default=""/>      
+        <setting id="noteid" type="text" label="Latest Notification" visible="false" />
+        <setting id="notedismiss" type="bool" label="Dismiss or Remind me later" visible="false" />
+        <setting id="contnoteid" type="text" label="Latest Contact Notification" visible="false" />
+        <setting id="contnotedismiss" type="bool" label="Dismiss or Remind me later" visible="false" />
+        <setting id="crednoteid" type="text" label="Latest Credits Notification" visible="false" />
+        <setting id="crednotedismiss" type="bool" label="Dismiss or Remind me later" visible="false" />
+        <setting type="lsep" label="[COLOR springgreen][B]Auto View Settings[/B][/COLOR]"/>
+        <setting id="auto-view" type="bool" label="[COLOR snow][B]Enable Auto View[/B][/COLOR]" default="true"/>
+        <setting id="MAIN" type="number" label="[COLOR snow][B]MAIN[/B][/COLOR]" default="[COLOR red][B]500[/B][/COLOR]" enable="!eq(-1,false)"/>               
+        <setting type="lsep" label="[COLOR springgreen][B]Backup Settings[/B][/COLOR]"/>
+        <setting id="zip" type="folder" label="[COLOR snow][B]Choose Backup Storage Location:[/B][/COLOR]" default="/" source="/" option="writeable" />        
+	</category>
+
+    <category label="[COLOR snow][B]Active Menus[/B][/COLOR]">    
+        <setting type="lsep" label="[COLOR springgreen][B]Enable / Disable Menu Options[/B][/COLOR]"/>
+        <setting id="adult" type="bool" label="[COLOR snow][B]Enable [/B][/COLOR][COLOR red][B]Adult Builds [/B][/COLOR][COLOR snow][B]Menu[/B][/COLOR] " enable="true" default="true"/> 
+        <setting id="developer" type="bool" label="[COLOR snow][B]Enable [/B][/COLOR][COLOR red][B]Developer [/B][/COLOR][COLOR snow][B]Menu[/B][/COLOR]" enable="true" default="false" />       
+        <setting id="fixes" type="bool" label="[COLOR snow][B]Enable [/B][/COLOR][COLOR red][B]Fixes and Tweaks [/B][/COLOR][COLOR snow][B]Menu[/B][/COLOR]" enable="true" default="true" />       
+        <setting id="theme" type="bool" label="[COLOR snow][B]Enable [/B][/COLOR][COLOR red][B]Themes [/B][/COLOR][COLOR snow][B]Menu[/B][/COLOR]" enable="true" default="false" visible="false"/>
+	</category>
+
+    <category label="[COLOR snow][B]Keep Settings[/B][/COLOR]">
+        <setting type="lsep" label="[COLOR springgreen][B]Keep Settings When Installing Build[/B][/COLOR]"/>
+        <setting id="keepfavourites" type="bool" label="[COLOR snow][B]Keep My [/B][/COLOR][COLOR red][B]Favourites[/B][/COLOR]" default="true"/>
+        <setting id="keepsources" type="bool" label="[COLOR snow][B]Keep My [/B][/COLOR][COLOR red][B]Sources[/B][/COLOR]" default="true"/>
+        <setting id="keepprofiles" type="bool" label="[COLOR snow][B]Keep My [/B][/COLOR][COLOR red][B]Profiles[/B][/COLOR]" default="true"/>
+        <setting id="keepadvanced" type="bool" label="[COLOR snow][B]Keep My [/B][/COLOR][COLOR red][B]AdvancedSettings[/B][/COLOR]" default="true"/> 
+        <setting id="keepversion" type="bool" label="[COLOR snow][B]Keep My [/B][/COLOR][COLOR red][B]Version Text File[/B][/COLOR]" default="true"/>               
+    </category>   
+</settings>

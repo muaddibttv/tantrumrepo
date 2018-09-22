@@ -1,0 +1,11 @@
+v0.0.4
+Unicode fix
+
+v0.0.3
+Logic Fix
+
+v0.0.2
+Case sensitivity patched on title matching
+
+v0.0.1
+Initial Release

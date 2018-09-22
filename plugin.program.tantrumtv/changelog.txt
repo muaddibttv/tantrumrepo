@@ -1,0 +1,132 @@
+v3.1.3
+    - Removed all cases involving APK related code
+
+v3.1.2
+    - Fixed issue with Fresh Start causing Wizard errors after complete
+    - Updated Youtube Daily Limit fix to use internal settings rather than XML replacement
+
+v3.0.3
+    - Fixed the Force Addon Update option (Derka derk)
+
+v3.0.2
+    - Updated YouTube XML Data for the Daily Limit Fix. Now uses a Tantrum.TV API Key for YouTube.
+
+v3.0.0
+    - Rework of code to make use of Base64 encoding
+    - Complete rewrite of settings.xml
+    - Complete rewrite of glo_var.py
+    - Added code in downloader.py to strip brackets and text within from Destination ( Such as [COLOR red] )
+    - Cleaning up duplicate variables
+    - Fixed Keep Profiles in Save Menu
+    - Moved multiple scripts to resources.lib
+    - Added Reload Skin
+    - Added Log Viewer for Kodi, Old, and Wizard
+    - Added Force Update for addons and repos
+    - Reorganized Maintenance Menu
+    - Added Fixes and Tweaks "Active" setting
+    - Added Fixes and Tweaks menu function as placeholder for the evening
+    - Updated Credits File - Added credit to Echo for some of the fixes
+    - YouTube Daily Limit fix and Sports Devil Cleaner and Reinstaller
+    - Added Debug toggle to Dev Menu
+    - Updated menu header code
+    - Updated icons
+
+v2.1.1
+    - Fixed Notify Window popping up twice during first run.
+
+v2.0.4
+    - Added support for Adult build menu during automatic upgrade check
+
+v2.0.3
+    - Hotfix for notify.py calls to invalid plugin and URLs
+
+v2.0.2
+    - Fixed bug in fresh install build menus
+
+v2.0.1
+    - Fixed Force Close code, now platform independant
+    - Removed android auto force close
+    - Fixed menu icons for various build menus
+    - Uploaded latest Wizard icon to old and new wizard download locations
+
+v2.0.0
+    - Rewrite of menu building code to give headers
+    - Fixed workingURL check in wizard definitions - Fixes issues breaking headers and generating errors
+    - Fixed APK menu files
+    - Fixed Developer menu list
+    - Added visual headers for installed build and version
+    - Added visual headers for current released version of installed build
+
+v1.5.0
+    - Removed VOD menu and All Wrestling add-on
+    - Updated Tantrum.TV image sets
+    - Added YouTube, Movies, TV Shows, and BoxSets menus
+    - Added Wrestling on Demand, Halow TV, SubZero, and TheDelorean add-on
+
+v1.4.2
+    - Updated Menus
+    - Expanded out live TV
+    - Added Deliverance add-on for sports and VODUpdated Menus
+    - Expanded out live TV
+    - Added Deliverance add-on for sports and VOD
+
+v1.4.1
+    - Added Tantrum skins
+    - Configured skins for Tantrum.TV Menu
+    - Set default skin to Tantrium.TV Light Red
+    - Added Bennu Add-on (Phoenix Reborn)
+    - Removed Movies About Music, old and no longer developed
+
+v1.4.0
+    - Updated Skins for new options
+    - Added Live TV (Free), using the StreamHub plugin
+    - Added Live TV (Pro), to use Subscription based Live TV feeds
+    - Default skin changed to Confluence
+
+v1.3.6
+    - Updated skins
+
+v1.3.5
+    - Removed Aeon Nox 5 as a theme option.
+    - Updated Mimic menus
+    - Updated Mimic settings and images
+    - Updated defaults for Covenant in the build
+
+v1.3.4
+    - Added Black Glass Nova base skin
+    - Added Mimic skin and pre-configured menus
+    - Added Tantrum and Power menu to Mimic skin
+    - Updated GUI Sound packs
+    - Changed default sound pack
+    - Updated Weather artwork and icons
+    - Updated settings for weather
+    - Enabled Passthrough
+    - Enabled AC3 Audio
+    - Corrected Kyrpton settings in Build Menu that was generating an error for an unsupported option
+
+v1.3.3
+    - Updated icons and artwork
+    - Updated predefined user settings
+    - Updated packages
+
+v1.3.1
+    - Updated a few more images
+    - Tantrum Menu updated in skins to point to the new wizard system
+
+v1.3
+    - Updated icons and artwork for Tantrum specifics in the WIzard.
+    - Began migration for personal Repo and custom APK installer for Android.
+
+v1.2
+    - Added custom menus to both items for "Tantrum"
+    - Added maintenance options and add-on browser to the new Tantrum menu
+    - Added maintenance add-ons
+    - Updated existing add-ons
+
+v1.1
+    - Added multiple skin support
+    - Configured Confluence with custom menu options
+    - Changed directory structure
+
+v1.0
+    - Initial Release

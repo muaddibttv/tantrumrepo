@@ -1,0 +1,8 @@
+v0.0.3
+    - Added the Jen Plugin for The Duke movie list
+
+v0.0.2
+    - Kodi 18 Support
+    
+v0.0.1
+    - Initial Release

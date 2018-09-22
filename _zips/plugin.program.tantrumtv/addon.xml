@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.tantrumtv" name="[COLOR red][B]Tantrum.TV[/B][/COLOR] [COLOR snow][B]Wizard[/B][/COLOR]" version="3.1.3" provider-name="MuadDib">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>program executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Welcome to the Tantrum.TV Install Wizard</summary>
+        <description lang="en">This Software is designed to keep your KODI device up to date and running smoothly</description>
+        <disclaimer lang="en">For help and support ... Please visit our group on Facebook!</disclaimer>
+        <language/>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum/>
+        <website>https://www.facebook.com/groups/1709673909327662/</website>
+        <email/>
+        <source/>
+        <news>The Spice must flow!</news>
+        <assets>
+            <icon>resources/art/icon.png</icon>
+            <fanart>resources/art/fanart.jpg</fanart>
+            <screenshot>resources/screenshot-01.png</screenshot>
+            <screenshot>resources/screenshot-02.png</screenshot>
+            <screenshot>resources/screenshot-03.png</screenshot>
+            <screenshot>resources/screenshot-04.png</screenshot>
+        </assets>
+    </extension>
+</addon>
