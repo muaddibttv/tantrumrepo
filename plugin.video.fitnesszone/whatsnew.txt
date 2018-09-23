@@ -1,0 +1,19 @@
+CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
+
+[COLOR red]Fitness Zone by Tantrum.TV Current Version 0.0.1[/COLOR]
+
+[COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
+
+
+[B][COLOR red]2017/10/10[/COLOR][/B]
+[COLOR snow]Initial Build and Testing:[/COLOR]
+[COLOR lime]Begin building menus and lists[/COLOR]
+[COLOR lime]Channel, Playlist, and Video menu code complete[/COLOR]
+
+
+
+
+
+
+
+=
