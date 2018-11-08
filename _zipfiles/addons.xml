@@ -282,7 +282,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="script.Atreides.metadata" version="1.0.1" name="Atreides Metadata" provider-name="69 Death Squad">
+<addon id="script.atreides.metadata" version="1.0.1" name="Atreides Metadata" provider-name="69 Death Squad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
