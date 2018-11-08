@@ -102,6 +102,42 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.atreides" version="0.0.1" name="Atreides" provider-name="69 Death Squad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.atreides" />
+		<import addon="script.atreides.artwork" />
+		<import addon="script.atreides.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Atreides</summary>
+		<description>Placenta Fork from the originators of Placenta. The next step in evolution.</description>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+		</disclaimer>
+		<platform>all</platform>
+		<license>Beerware rev. 42</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
 <addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -230,6 +266,38 @@
     </extension>
 </addon>
 
+<addon id="script.atreides.artwork" version="0.0.1" name="Atreides Artwork" provider-name="69 Death Squad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Atreides Addon</summary>
+		<description>Artwork Module for the Atreides Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.Atreides.metadata" version="1.0.1" name="Atreides Metadata" provider-name="69 Death Squad">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Atreides Addon</summary>
+		<description>Metadata for Atreides are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.autoruns"
        name="Autoruns"
        version="1.0.1"
@@ -251,6 +319,22 @@
 		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
 		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
     </extension>
+</addon>
+
+<addon id="script.module.atreides" name="Atreides Module" version="0.0.1" provider-name="69 Death Squad">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Atreides</summary>
+		<description>Placenta Fork bitches</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+	</extension>
 </addon>
 
 <addon id="script.module.ytpsearch" name="YouTube Playlist Search" version="0.0.4" provider-name="MuadDib">
