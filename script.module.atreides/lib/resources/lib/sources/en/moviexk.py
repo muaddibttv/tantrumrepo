@@ -177,6 +177,8 @@ class source:
                 try:
                     url = client.request(u, mobile=True)
                     url = client.parseDOM(url, 'source', ret='src')
+                    if url is None:
+                        return sources
                     if '../moviexk.php' in url[0]:
                         url[0] = url[0].replace('..', '')
                         url[0] = urlparse.urljoin(self.base_link, url[0])

@@ -28,7 +28,6 @@ from resources.lib.modules import cache, cleangenre, cleantitle, client, control
 
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?', ''))) if len(sys.argv) > 1 else dict()
 action = params.get('action')
-control.moderator()
 
 
 class seasons:

@@ -23,7 +23,6 @@ from resources.lib.modules import client, control, log_utils
 
 sysaddon = sys.argv[0]
 syshandle = int(sys.argv[1])
-control.moderator()
 artPath = control.artPath()
 addonFanart = control.addonFanart()
 
@@ -90,7 +89,6 @@ class documentary:
         return self.list
 
     def docu_play(self, url):
-        control.moderator()
         try:
             docu_page = client.request(url)
             docu_item = client.parseDOM(docu_page, 'meta', attrs={'itemprop': 'embedUrl'}, ret='content')[0]

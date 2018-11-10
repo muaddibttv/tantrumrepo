@@ -26,7 +26,6 @@ from resources.lib.modules import cache, cleangenre, client, control, metacache,
 
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?', ''))) if len(sys.argv) > 1 else dict()
 action = params.get('action')
-control.moderator()
 
 
 class movies:

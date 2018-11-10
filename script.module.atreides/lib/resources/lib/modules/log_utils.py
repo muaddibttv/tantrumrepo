@@ -54,7 +54,7 @@ def log(msg, level=LOGNOTICE):
                 line = '[%s %s] %s: %s' % (datetime.now().date(), str(datetime.now().time())[:8], DEBUGPREFIX, msg)
                 f.write(line.rstrip('\r\n')+'\n')
         else:
-            print '%s: %s' % (DEBUGPREFIX, msg)
+            print('%s: %s' % (DEBUGPREFIX, msg))
     except Exception as e:
         try:
             xbmc.log('Logging Failure: %s' % (e), level)

@@ -24,7 +24,6 @@ from resources.lib.modules import control, trakt
 
 sysaddon = sys.argv[0]
 syshandle = int(sys.argv[1])
-control.moderator()
 artPath = control.artPath()
 addonFanart = control.addonFanart()
 

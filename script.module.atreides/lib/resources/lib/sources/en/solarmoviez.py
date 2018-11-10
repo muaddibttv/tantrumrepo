@@ -152,6 +152,8 @@ class source:
             #    pass
 
             if (url is None):
+                if i is None:
+                    return
                 url = [i[0] for i in results if self.matchAlias(i[1], aliases)][0]
             return url
         except Exception:

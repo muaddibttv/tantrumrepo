@@ -36,7 +36,8 @@ class source:
             m = dom_parser.parse_dom(r, 'div', attrs={'class': 'masonry'})
             m = dom_parser.parse_dom(m, 'a', req='href')
             m = [(i.attrs['href']) for i in m if i.content == title]
-            url = urlparse.urljoin(self.base_link, m[0])
+            if m is not None:
+                url = urlparse.urljoin(self.base_link, m[0])
             return url
         except Exception:
             failure = traceback.format_exc()

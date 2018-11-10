@@ -1,10 +1,5 @@
-1. Remove Moderator
-2. Find out what used jsonunfuck, since I fixed issues with it
-3. Fixed broken/missing askCaptcha in regex.py module
-4. Look over import LSProdynamicCode in regex.py (VSC couldn't find it)
-5. Complete all code cleanup and formatting
-6. Finish up cleaning through ALL scrapers
-7. Rewrite the settings.xml to match scrapers
-8. Test out Documents section and expand it out to match plugins
-9. Test out Podcasts section and expand it out to match Arrakis
-10. Expand Kids section to match Arrakis
+3. Look over import LSProdynamicCode in regex.py (VSC couldn't find it)
+6. Rewrite the settings.xml to match scrapers
+7. Test out Documents section and expand it out to match plugins
+8. Test out Podcasts section and expand it out to match Arrakis
+9. Expand Kids section to match Arrakis

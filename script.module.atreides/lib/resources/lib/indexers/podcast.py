@@ -24,7 +24,6 @@ from resources.lib.modules import client, control, log_utils
 
 sysaddon = sys.argv[0]
 syshandle = int(sys.argv[1])
-control.moderator()
 artPath = control.artPath()
 addonFanart = control.addonFanart()
 
@@ -217,7 +216,6 @@ class podcast:
             pass
 
     def podcast_play(self, action, url):
-        control.moderator()
         try:
             if 'podcastOne' in action:
                 ep_page = client.request(url)

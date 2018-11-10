@@ -71,9 +71,6 @@ class source:
             if url is None:
                 return sources
 
-            if debrid.status() is False:
-                raise Exception()
-
             data = urlparse.parse_qs(url)
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
@@ -166,10 +163,16 @@ class source:
                 host = client.replaceHTMLCodes(host)
                 host = host.encode('utf-8')
 
-                sources.append(
-                    {'source': host, 'quality': item[1],
-                     'language': 'en', 'url': url, 'info': item[2],
-                     'direct': False, 'debridonly': True})
+                if debrid.status() is False:
+                    sources.append(
+                        {'source': host, 'quality': item[1],
+                         'language': 'en', 'url': url, 'info': item[2],
+                         'direct': False, 'debridonly': False})
+                else:
+                    sources.append(
+                        {'source': host, 'quality': item[1],
+                         'language': 'en', 'url': url, 'info': item[2],
+                         'direct': False, 'debridonly': True})
 
             return sources
         except Exception:

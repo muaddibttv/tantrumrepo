@@ -72,9 +72,6 @@ class source:
             if url is None:
                 return sources
 
-            if debrid.status() is False:
-                raise Exception()
-
             data = urlparse.parse_qs(url)
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
             title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
@@ -197,8 +194,7 @@ class source:
                     host = client.replaceHTMLCodes(host)
                     host = host.encode('utf-8')
                     sources.append({'source': host, 'quality': quality, 'language': 'en',
-                                    'url': host2, 'info': info, 'direct': False, 'debridonly': True})
-                    # why is this hardcoded to debridonly=True? seems like overkill but maybe there's a resource-management reason?
+                                    'url': host2, 'info': info, 'direct': False, 'debridonly': debrid.status()})
                 except Exception:
                     pass
             check = [i for i in sources if not i['quality'] == 'CAM']

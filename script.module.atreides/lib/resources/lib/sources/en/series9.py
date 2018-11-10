@@ -108,8 +108,10 @@ class source:
                 pass
 
             if (url is None):
-                url = [i[0] for i in results if self.matchAlias(i[1], aliases)][0]
-
+                if i is not None:
+                    url = [i[0] for i in results if self.matchAlias(i[1], aliases)][0]
+                else:
+                    return
             url = urlparse.urljoin(self.base_link, '%s/watching.html' % url)
             return url
         except Exception:

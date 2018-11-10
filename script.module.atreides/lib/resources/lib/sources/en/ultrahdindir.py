@@ -45,9 +45,6 @@ class source:
             if url is None:
                 return sources
 
-            if debrid.status() is False:
-                raise Exception()
-
             data = urlparse.parse_qs(url)
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
@@ -134,8 +131,7 @@ class source:
                             host = host.encode('utf-8')
 
                             sources.append({'source': host, 'quality': quality, 'language': 'en',
-                                            'url': url, 'info': info, 'direct': direct, 'debridonly': False})
-
+                                            'url': url, 'info': info, 'direct': direct, 'debridonly': debrid.status()})
                         except Exception:
                             pass
                 except Exception:
