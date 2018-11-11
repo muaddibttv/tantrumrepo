@@ -17,23 +17,19 @@ import os
 import re
 import traceback
 
-import kodi
 import xbmc
 import xbmcgui
 import xbmcaddon
 
-addon_id = xbmcaddon.Addon().getAddonInfo('id')
-addon_name = xbmcaddon.Addon().getAddonInfo('name')
+addon_name = 'Atreides'
 addon_icon = xbmcaddon.Addon().getAddonInfo('icon')
-ownAddon = xbmcaddon.Addon(id=addon_id)
-
-addon_path = xbmc.translatePath(('special://home/addons/%s' % (addon_id))).decode('utf-8')
+addon_path = xbmc.translatePath(('special://home/addons/script.module.atreides')).decode('utf-8')
 
 
 def main():
     xbmcgui.Dialog().notification(addon_name, 'Gathering scraper details', addon_icon)
-    settings_xml_path = os.path.join(kodi.get_path(), 'resources/settings.xml')
-    scraper_path = os.path.join(kodi.get_path(), 'lib/resources/lib/sources/en')
+    settings_xml_path = os.path.join(addon_path, 'resources/settings.xml')
+    scraper_path = os.path.join(addon_path, 'lib/resources/lib/sources/en')
     print('%s: %s' % ('Atreides Scraper Path', str(scraper_path)))
     try:
         xml = openfile(settings_xml_path)

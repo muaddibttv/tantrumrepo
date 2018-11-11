@@ -321,7 +321,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
-<addon id="script.module.atreides" name="Atreides Module" version="0.0.2" provider-name="69 Death Squad">
+<addon id="script.module.atreides" name="Atreides Module" version="0.0.3" provider-name="69 Death Squad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="xbmc.python" version="2.1.0" />
