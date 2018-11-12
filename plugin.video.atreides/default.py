@@ -369,13 +369,6 @@ elif action == 'fitness':
     else:
         youtube.yt_index().get(action, subid)
 
-elif action == 'legends':
-    from resources.lib.indexers import youtube
-    if subid is None:
-        youtube.yt_index().root(action)
-    else:
-        youtube.yt_index().get(action, subid)
-
 elif action == 'podcastNavigator':
     from resources.lib.indexers import podcast
     podcast.podcast().root()

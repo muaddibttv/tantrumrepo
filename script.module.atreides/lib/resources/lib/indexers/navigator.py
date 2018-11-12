@@ -44,7 +44,7 @@ class navigator:
     LOCALNEWS = os.path.join(THISADDONPATH, 'whatsnew.txt')
 
     def root(self):
-        self.addDirectoryItem('[COLOR=orange]News and Updates[/COLOR]', 'newsNavigator', 'tools.png', 'DefaultAddonProgram.png')
+        self.addDirectoryItem('[COLOR=darkgray]News and Updates[/COLOR]', 'newsNavigator', 'tools.png', 'DefaultAddonProgram.png')
         self.addDirectoryItem(32001, 'movieNavigator', 'movies.png', 'DefaultMovies.png')
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
 
@@ -64,8 +64,6 @@ class navigator:
             self.addDirectoryItem(32610, 'kidscorner', 'kidscorner.png', 'DefaultMovies.png')
         if self.getMenuEnabled('navi.fitness') is True:
             self.addDirectoryItem(32611, 'fitness', 'fitness.png', 'DefaultMovies.png')
-        if self.getMenuEnabled('navi.legends') is True:
-            self.addDirectoryItem(32612, 'legends', 'legends.png', 'DefaultMovies.png')
 
         if self.getMenuEnabled('navi.podcasts') is True:
             self.addDirectoryItem(32620, 'podcastNavigator', 'podcast.png', 'DefaultVideoPlaylists.png')
@@ -80,8 +78,8 @@ class navigator:
             self.addDirectoryItem(32009, 'downloadNavigator', 'downloads.png', 'DefaultFolder.png')
 
         self.addDirectoryItem(32010, 'searchNavigator', 'search.png', 'DefaultFolder.png')
-        self.addDirectoryItem('[COLOR=orange]Follow on Twitter: @tantrumdev[/COLOR]', 'sectionItem', 'icon.png', 'DefaultAddonProgram.png')
-        self.addDirectoryItem('[COLOR=orange]Can find on YouTube at http://youtube.tantrumtv.com[/COLOR]', 'sectionItem', 'icon.png', 'DefaultAddonProgram.png')
+        self.addDirectoryItem('[COLOR=darkgray]Follow on Twitter: @tantrumdev[/COLOR]', 'sectionItem', 'icon.png', 'DefaultAddonProgram.png')
+        self.addDirectoryItem('[COLOR=darkgray]Can find on YouTube at http://youtube.tantrumtv.com[/COLOR]', 'sectionItem', 'icon.png', 'DefaultAddonProgram.png')
 
         self.endDirectory()
 

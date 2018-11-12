@@ -36,10 +36,6 @@ class yt_index:
                 self.action = 'fitness'
                 self.base_url = 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL211YWRkaWJ0dHYvZml0bmVzc3pvbmUvbWFzdGVyLw=='.decode('base64')
                 self.mainmenu = 'JXNmem1haW4udHh0'.decode('base64') % (self.base_url)
-            elif action == 'legends':
-                self.action = 'legends'
-                self.base_url = 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL211YWRkaWJ0dHYvbGVnZW5kc2FkZG9uL21hc3Rlci9tZW51Lw=='.decode('base64')
-                self.mainmenu = 'JXNpaG1haW4udHh0'.decode('base64') % (self.base_url)
             elif action == 'tvReviews':
                 self.action = 'tvReviews'
                 self.base_url = 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL211YWRkaWJ0dHYvdGhlY3JpdGljcy9tYXN0ZXIv'.decode('base64')

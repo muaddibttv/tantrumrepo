@@ -27,7 +27,6 @@
         <setting id="navi.docu" type="bool" label="32631" default="true" />
         <setting id="navi.kidscorner" type="bool" label="32610" default="true" />
         <setting id="navi.fitness" type="bool" label="32611" default="true" />
-        <setting id="navi.legends" type="bool" label="32612" default="true" />
         <setting id="navi.podcasts" type="bool" label="32620" default="true" />
         <setting id="navi.channels" type="bool" label="32007" default="true" />
         <setting type="lsep" label="32001" />

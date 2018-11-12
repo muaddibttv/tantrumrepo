@@ -102,7 +102,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.atreides" version="0.5.0" name="Atreides" provider-name="69 Death Squad">
+<addon id="plugin.video.atreides" version="0.6.0" name="Atreides" provider-name="69 Death Squad">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.atreides" />
@@ -322,7 +322,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
-<addon id="script.module.atreides" name="Atreides Module" version="0.5.0" provider-name="69 Death Squad">
+<addon id="script.module.atreides" name="Atreides Module" version="0.6.0" provider-name="69 Death Squad">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="xbmc.python" version="2.1.0" />

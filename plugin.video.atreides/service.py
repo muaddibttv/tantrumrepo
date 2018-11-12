@@ -50,7 +50,7 @@ def main():
             file = file.replace('.py', '')
             new_settings += '        <setting id="provider.%s" type="bool" label="%s" default="true" />\n' % (
                 file.lower(), file.upper())
-    new_settings += '    </category>\n'
+    new_settings += '    </category>'
 
     xml = xml.replace('<category label="32345"></category>', str(new_settings))
     savefile(settings_xml_path, xml)
