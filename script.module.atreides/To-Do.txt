@@ -1,5 +1,0 @@
-1. Change newsfile location in navigator index file
-2. Update All APIs
-7. Test out Documents section and expand it out to match plugins
-8. Test out Podcasts section and expand it out to match Arrakis
-9. Expand Kids section to match Arrakis

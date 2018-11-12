@@ -1,2 +1,0 @@
-v 0.0.1
-    - In Beta until the v1.0.0 release is made

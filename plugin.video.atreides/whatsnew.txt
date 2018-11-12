@@ -1,9 +1,0 @@
-CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
-
-[COLOR red]Atreides by 69 Death Squad Current Version 0.0.1[/COLOR]
-[COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
-
-[B][COLOR red]2018/11/06[/COLOR][/B]
-[COLOR lime]Atreides ver 0.0.1[/COLOR]    - Beta Releases until version 1.0.0 is released
- 
-=
