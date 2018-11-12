@@ -26,13 +26,14 @@ from xbmc import (LOGDEBUG, LOGERROR, LOGFATAL, LOGINFO,
 
 addon_name = 'Atreides'
 addon_icon = xbmcaddon.Addon().getAddonInfo('icon')
-addon_path = xbmc.translatePath(('special://home/addons/script.module.atreides')).decode('utf-8')
+addon_path = xbmc.translatePath(('special://home/addons/plugin.video.atreides')).decode('utf-8')
+module_path = xbmc.translatePath(('special://home/addons/script.module.atreides')).decode('utf-8')
 
 
 def main():
     xbmcgui.Dialog().notification(addon_name, 'Gathering scraper details', addon_icon)
     settings_xml_path = os.path.join(addon_path, 'resources/settings.xml')
-    scraper_path = os.path.join(addon_path, 'lib/resources/lib/sources/en')
+    scraper_path = os.path.join(module_path, 'lib/resources/lib/sources/en')
     log('Atreides Scraper Path: %s' % (str(scraper_path)), LOGINFO)
     try:
         xml = openfile(settings_xml_path)

@@ -76,6 +76,7 @@
         <setting type="lsep" label="32372" />
         <setting id="crefresh" type="bool" label="32373" default="false" />
     </category>
+    <category label="32345"></category>
     <category label="32346">
         <setting type="lsep" label="FANART.TV" />
         <setting type="lsep" label="32582" default="" />
