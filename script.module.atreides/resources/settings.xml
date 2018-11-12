@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <category label="32345">
-        <setting id="provider.liomenoi" type="bool" label="LIOMENOI" default="true" />
-    </category>
+<category label="32345"></category>
     <category label="Debug">
         <setting id="addon_debug" type="bool" label="Enable Debug" default="false" />
     </category>

@@ -1,5 +1,3 @@
-3. Look over import LSProdynamicCode in regex.py (VSC couldn't find it)
-6. Rewrite the settings.xml to match scrapers
 7. Test out Documents section and expand it out to match plugins
 8. Test out Podcasts section and expand it out to match Arrakis
 9. Expand Kids section to match Arrakis

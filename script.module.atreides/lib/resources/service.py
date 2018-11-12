@@ -21,8 +21,7 @@ import xbmc
 import xbmcgui
 import xbmcaddon
 
-from xbmc import (LOGDEBUG, LOGERROR, LOGFATAL, LOGINFO,
-                  LOGNONE, LOGNOTICE, LOGSEVERE, LOGWARNING)
+from lib.resources.lib.modules import log_utils
 
 addon_name = 'Atreides'
 addon_icon = xbmcaddon.Addon().getAddonInfo('icon')
@@ -33,37 +32,42 @@ def main():
     xbmcgui.Dialog().notification(addon_name, 'Gathering scraper details', addon_icon)
     settings_xml_path = os.path.join(addon_path, 'resources/settings.xml')
     scraper_path = os.path.join(addon_path, 'lib/resources/lib/sources/en')
-    log('Atreides Scraper Path: %s' % (str(scraper_path)), LOGINFO)
+    log_utils.log('Atreides Scraper Path: %s' % (str(scraper_path)), log_utils.LOGNOTICE)
     try:
         xml = openfile(settings_xml_path)
     except Exception:
         failure = traceback.format_exc()
-        log('Atreides Service - Exception: \n %s' % (str(failure)), LOGINFO)
+        log_utils.log('Atreides Service - Exception: \\n %s' % (str(failure)), log_utils.LOGNOTICE)
         return
 
     new_settings = []
-    new_settings = '<category label="32345">\n'
-    for file in glob.glob("%s/*.py" % (scraper_path)):
-        file = os.path.basename(file)
-        if '__init__' not in file:
-            file = file.replace('.py', '')
-            new_settings += '        <setting id="provider.%s" type="bool" label="%s" default="true" />\n' % (
-                file.lower(), file.upper())
-    new_settings += '    </category>\n'
+    new_settings.insert(0, '<category label="32345">')
+    match = re.search('(<category label="32345">.*?</category>)', xml, re.DOTALL | re.I)
+    if match:
+        old_settings = match.group(1)
+        log_utils.log('Atreides Service - Old Settings: \\n %s' % (str(old_settings)), log_utils.LOGNOTICE)
+        for file in glob.glob("%s/*.py" % (scraper_path)):
+            if '__init__' not in file:
+                file = file.replace('.py', '')
+                new_settings.append(
+                    '        <setting id="provider.%s" type="bool" label="%s" default="true" />\\n' %
+                    (file.lower(),
+                     file.upper()))
+        new_settings.append('    </category>')
 
-    xml = xml.replace('<category label="32345"></category>', str(new_settings))
-    savefile(settings_xml_path, xml)
+        xml = xml.replace(old_settings, new_settings)
+        savefile(settings_xml_path, xml)
 
-    disable_this()
-    xbmcgui.Dialog().notification(addon_name, 'Scraper settings updated', addon_icon)
+        disable_this()
+        xbmcgui.Dialog().notification(addon_name, 'Scraper settings updated', addon_icon)
 
 
 def disable_this():
-    addonxml_path = os.path.join(addon_path, 'addon.xml')
+    addonxml_path = os.path.join(kodi.get_path(), 'addon.xml')
     xml_content = openfile(addonxml_path)
     if re.search('point="xbmc.service"', xml_content):
         xml_content = xml_content.replace('point="xbmc.service"',
-                                          'point="xbmc.atreides"')
+                                          'point="xbmc.jen"')
         savefile(addonxml_path, xml_content)
     else:
         pass
@@ -89,22 +93,6 @@ def savefile(path_to_the_file, content):
     except Exception:
         failure = traceback.format_exc()
         print('Service Save File Exception - %s \n %s' % (path_to_the_file, str(failure)))
-
-
-DEBUGPREFIX = '[COLOR red][ ATREIDES DEBUG ][/COLOR]'
-
-
-def log(msg, level=LOGNOTICE):
-
-    try:
-        if isinstance(msg, unicode):
-            msg = '%s (ENCODED)' % (msg.encode('utf-8'))
-        print('%s: %s' % (DEBUGPREFIX, msg))
-    except Exception as e:
-        try:
-            xbmc.log('Logging Failure: %s' % (e), level)
-        except Exception:
-            pass
 
 
 if __name__ == '__main__':
